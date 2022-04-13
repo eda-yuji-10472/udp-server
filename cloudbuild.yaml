@@ -48,7 +48,7 @@ steps:
 # Save test logs to Google Cloud Storage
 artifacts:
   objects:
-    location: gs://$_BUCKET_NAME/
+    location: gs://udp-server/
     paths:
       - ${SHORT_SHA}_test_log.xml
 # [END cloudbuild_go_logs_yaml]
